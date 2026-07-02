@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="eng">
 
 <head>
@@ -10,7 +10,23 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="unitegallery/js/unitegallery.min.js"></script>
+    <script src="unitegallery/themes/default/ug-theme-default.js"></script>
+    <script>
+       jQuery("#gallery").unitegallery({
+            grid_space_between_cols:0,
+            grid_space_between_rows:0,
+            tile_enable_border:false,
+            tile_enable_shadow:false,
+            grid_padding:0,
+            tile_width:250,
+        });
+    </script>
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="unitegallery/css/unite-gallery.css">
+	<link rel="stylesheet" href="unitegallery/themes/default/ug-theme-default.css">
 </head>
 
 <body>
@@ -63,15 +79,81 @@
             </h1>
         </div>
         <div class="container">
-            <p>
-                
-            </p>
+            <div id="gallery">
+
+                <img alt="" src="img/gallery/thumbs/thmb_Camelot_WP.jpg"
+                    data-description="Image 1 Description">
+
+                <img alt="" src="img/gallery/thumbs/thmb_gls_psp1.jpg"
+                    data-image="images/image02.jpg"
+                    data-description="Image 2 Description">
+<!--
+                <img alt="" src="img/gallery/thumbs/thmb_gls_psp1.jpg"
+                    data-image="images/image02.jpg"
+                    data-description="">
+
+                <img alt="" src="img/gallery/thumbs/thmb_gls_psp1.jpg"
+                    data-image="images/image02.jpg"
+                    data-description="">
+            -->
+		    </div>
+        </div>
+</main>
+<!--
+<section id="art">
+  <div class="player">
+    <img>
+  </div>
+  <div class="wide">
+    <img>
+  </div>
+</section>
+
+<section id="playlist">
+  <table id="playlist" class="no-select">
+    <thead>
+      <th>&nbsp;</th>
+      <th>Title</th>
+      <th>Artist</th>
+      <th>Album</th>
+      <th><span class="fa fa-clock-o"></span></th>
+    </thead>
+    <tbody></tbody>
+  </table>
+</section>
+
+<footer id="interactions">
+  <div class="tracking-wrap">
+    <span class="song-current-time">--:--</span>
+    <input class="tracking-slider range" type="range" min="0" value="0" step="1">
+    <span class="song-length">--:--</span>
+  </div>
+  
+  <div class="controls-bar">
+    <section id="controls">
+      <span class="fa fa-random shuffle"></span>
+      <span class="fa fa-fast-backward previous"></span>
+      <span class="fa fa-play play-pause"></span>
+      <span class="fa fa-fast-forward next"></span>
+      <span class="fa fa-repeat repeat on"></span>
+    </section>
+    
+    <div id="volume">
+      <span class="fa fa-volume-down"></span>
+      <input class="volume-slider range" type="range" max="1" min="0" step="0.01" value="0.8">
+      <span class="fa fa-volume-up"></span>
+    </div>
+  </div>
+</footer>
+
+<audio id="player"></audio>
+
         </div>
 </main>
     <hr>
     <aside class="section has-text-center">
         "Music has the power to bring people together like no other art form." -Michael Franti
-    </aside>
+    </aside>-->
 
     <footer class="top has-bg-light-grey">
         <div class="top__social">
@@ -99,6 +181,7 @@
             </ul>
         </div>
     </footer>
+
 </body>
 
 </html>

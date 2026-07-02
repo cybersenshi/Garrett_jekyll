@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://cdn.jsdelivr.net/npm/orbitcss/css/orbit.min.css");
+@import url("prettyForms.css");
 @import url("https://fonts.googleapis.com/css2?family=Girassol&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css");
 body {
@@ -13,6 +14,11 @@ body {
 .top {
   text-transform: uppercase;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: revert;
+  font-weight: revert;
 }
 
 h1 {

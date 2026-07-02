@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="eng">
 
 <head>
@@ -10,7 +10,23 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="unitegallery/js/unitegallery.min.js"></script>
+    <script src="unitegallery/themes/default/ug-theme-default.js"></script>
+    <script>
+       jQuery("#gallery").unitegallery({
+            grid_space_between_cols:0,
+            grid_space_between_rows:0,
+            tile_enable_border:false,
+            tile_enable_shadow:false,
+            grid_padding:0,
+            tile_width:250,
+        });
+    </script>
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="unitegallery/css/unite-gallery.css">
+	<link rel="stylesheet" href="unitegallery/themes/default/ug-theme-default.css">
 </head>
 
 <body>
@@ -99,6 +115,7 @@
             </ul>
         </div>
     </footer>
+
 </body>
 
 </html>
