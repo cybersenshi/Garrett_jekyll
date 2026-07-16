@@ -11,22 +11,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="unitegallery/js/unitegallery.min.js"></script>
-    <script src="unitegallery/themes/default/ug-theme-default.js"></script>
-    <script>
-       jQuery("#gallery").unitegallery({
-            grid_space_between_cols:0,
-            grid_space_between_rows:0,
-            tile_enable_border:false,
-            tile_enable_shadow:false,
-            grid_padding:0,
-            tile_width:250,
-        });
-    </script>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="unitegallery/css/unite-gallery.css">
-	<link rel="stylesheet" href="unitegallery/themes/default/ug-theme-default.css">
 </head>
 
 <body>
@@ -81,19 +67,20 @@
         <div class="container">
             <div class="grid">
                 <div class="column is-two-thirds">
-                    <form target="_blank" action="https://formsubmit.co/peloquin.chaney@proton.me" method="POST">
+                    <form target="_blank" action="https://formsubmit.co/acb88256da1f17c89a2f566629b0c606" method="POST">
+                        <input type="hidden" name="_subject" value="Student Inquiry">
                         <div class="column is-two-thirds">
-                            <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
+                            <input type="text" name="Name" id="name" class="form-control" placeholder="Name" required>
                         </div>
                         <div class="column is-two-thirds">
-                            <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+                            <input type="email" name="Email" id="email" class="form-control" placeholder="Email" required>
                         </div>
                         <div class="column is-two-thirds is-input-group">
                             <span>+1</span>
-                            <input type="tel" placeholder="Phone">
+                            <input type="tel" name="Phone" placeholder="Phone">
                         </div>
                         <div class="column is-two-thirds">
-                        <textarea placeholder="Tell me about yourself" class="form-control" name="message" id="message" rows="10" required></textarea>
+                        <textarea placeholder="Tell me about yourself" class="form-control" name="Message" id="message" rows="10" required></textarea>
                         </div>
                         <button type="submit" class="button">
                             Submit
@@ -122,6 +109,7 @@
                         </p>
                     </address>
                 </div>
+            </div>
             </div>
     </main>
     <hr>
